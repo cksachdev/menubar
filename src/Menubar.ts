@@ -113,7 +113,7 @@ export class Menubar extends EventEmitter {
    * @param key - The option key to modify, see {@link Options}.
    * @param value - The value to set.
    */
-  setOption (key: keyof Options, value: any) {
+  setOption<K extends keyof Options>(key: K, value:any) {
     this._options[key] = value;
   }
 

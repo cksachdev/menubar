@@ -103,10 +103,10 @@ function backwardCompat (
       console.warn(
         `Passing 'options.${field}' is deprecated, please use 'options.browserWindow.${field}'`
       );
-      options.browserWindow![_field] =
-        opts.browserWindow && opts.browserWindow[_field] !== undefined
-          ? opts.browserWindow[_field]
-          : opts[_field];
+      // options.browserWindow![_field] =
+      //   opts.browserWindow && opts.browserWindow[_field] !== undefined
+      //     ? opts.browserWindow[_field]
+      //     : opts[_field];
     }
   };
 }
